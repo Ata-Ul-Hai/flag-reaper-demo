@@ -1,5 +1,4 @@
-"""Checkout flow. `new-checkout-flow` gates the v2 path; `checkout-redesign`
-gates the page renderer."""
+"""Checkout flow: v1/v2 gated by a feature flag, plus the page renderer."""
 from __future__ import annotations
 
 from .flags import is_enabled
