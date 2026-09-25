@@ -1,3 +1,9 @@
 __pycache__/
 *.pyc
-.pytest_cache/
+.venv/
+mcp-test/
+audit/state.json
+audit/unleash_client_token
+.env
+demo/checkout-service/.pytest_cache/
+skill/reaper/
