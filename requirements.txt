@@ -1,0 +1,3 @@
+UnleashClient>=6
+PyYAML>=6
+pytest>=8
