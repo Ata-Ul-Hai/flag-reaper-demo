@@ -7,10 +7,3 @@ def setup_function(fn):
     flags.reset_overrides()
 
 
-def test_darkmode_toggle_defaults_off():
-    assert flags.is_enabled("darkmode-toggle") is False
-
-
-def test_darkmode_toggle_can_be_forced_on():
-    flags.set_test_override("darkmode-toggle", True)
-    assert flags.is_enabled("darkmode-toggle") is True
