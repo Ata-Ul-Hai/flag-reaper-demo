@@ -14,13 +14,6 @@ def test_checkout_defaults_to_v1():
     assert result["total"] == 20.0
 
 
-def test_checkout_v2_when_flag_on():
-    flags.set_test_override("new-checkout-flow", True)
-    cart = {"items": [{"sku": "x", "price": 10.0, "qty": 2}]}
-    result = checkout(cart)
-    assert result["version"] == 2
-
-
 def test_render_page_classic_by_default():
     assert "classic-checkout" in render_checkout_page({"items": []})
 

@@ -21,10 +21,7 @@ def _checkout_v2(cart: dict) -> dict:
 
 
 def checkout(cart: dict) -> dict:
-    if is_enabled("new-checkout-flow"):
-        return _checkout_v2(cart)
-    else:
-        return _checkout_v1(cart)
+    return _checkout_v1(cart)
 
 
 def _render_classic(cart: dict) -> str:
